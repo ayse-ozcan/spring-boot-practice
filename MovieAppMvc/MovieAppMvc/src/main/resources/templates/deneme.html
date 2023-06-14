@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" action="doLogin">
+    <label th:text="${ka}"></label><br>
+    <input name="txtkullaniciAdi"><br>
+
+    <label th:text="${psw}"></label><br>
+    <input name="txtSifre"><br>
+
+    <button type="submit" >Giriş</button>
+</form>
+
+
+<br><br><br>
+<h1>Register Sayfası</h1>
+<h2 th:text="${img}"></h2>
+<h2 th:text="${email}"></h2>
+</body>
+</html>
