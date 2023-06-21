@@ -32,4 +32,7 @@ public class MovieService {
             throw new RuntimeException("film bulunamadi");
         }
     }
+    public List<Movie> findAllByGenres_NameIn(String[] genre){
+        return movieRepository.findAllByGenres_NameIn(genre);
+    }
 }
